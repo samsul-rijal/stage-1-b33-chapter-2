@@ -1,0 +1,96 @@
+
+body {
+    margin: 0;
+}
+
+
+nav {
+    background-color: rgb(225, 233, 233);
+    display: flex;
+    height: 7vh;
+}
+
+nav .nav-left {
+    /* background-color: blueviolet; */
+    display: flex;
+    padding-left: 100px;
+    flex: 50%;
+    align-items: center;
+}
+
+
+nav .nav-left li {
+    display: inline;
+}
+
+nav .nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+}
+
+
+nav .nav-right {
+    /* background-color: brown; */
+    display: flex;
+    justify-content: flex-end; /* horizontal */
+    align-items: center; /* vertical */
+    flex: 50%;
+    padding-right: 100px;
+}
+
+nav .nav-right a {
+    background-color: orangered;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container {
+    /* background-color: aquamarine; */
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container section {
+    /* background-color: cadetblue; */
+    display: flex;
+    width: 85%;
+}
+
+section .section-left {
+    flex: 30%;
+}
+
+section .section-right {
+    /* background-color: rgb(99, 97, 106); */
+    flex: 70%;
+    padding-left: 40px;
+}
+
+section .section-right p {
+    color: grey;
+}
+
+section .section-right .skill-container {
+    display: flex;
+}
+
+.skill-container div {
+    flex: 1;
+}
+
+.skill-container div img {
+    width: 50px;
+}
+
+.social-media {
+    font-size: 30px;
+}
+
+.social-media i {
+    margin-right: 8px;
+}
