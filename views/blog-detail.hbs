@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Creating Blog Page - detail</title>
+    <link rel="stylesheet" href="../public/style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="left-side">
+        <a href="/">
+          <img src="../public/assets/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/blog" class="list-active">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="/contact"> Contact Me </a>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <div class="blog-detail">
+      <div class="blog-detail-container">
+        <h1>{{blog.title}}</h1>
+        <div class="author">{{blog.post_at}} | {{blog.author}}</div>
+        <img src="../public/assets/blog-img-detail.png" alt="detail" />
+        <p>
+          {{blog.content}}
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

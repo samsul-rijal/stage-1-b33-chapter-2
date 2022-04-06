@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>Creating Form</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="public/formStyle.css">
+
+    <script src="../public/js/form.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">        
+            <img src="public/assets/logo.png" alt="logo">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="nav-right">
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <form style="width: 400px; margin: 50px auto">
+
+        <div>
+            <label for="input-name" style="font-weight: bold; font-size: 20px;">Name</label>
+            <input type="text" id="input-name" 
+                style="width: 100%; 
+                background-color:rgb(234, 235, 236);
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(212, 212, 212);
+                margin-top: 8px" />
+        </div>
+    
+        <div style="margin-top: 15px">
+            <label for="input-email" style="font-weight: bold; font-size: 20px;">Email</label>
+            <input type="email" id="input-email" style="width: 100%; 
+                background-color:rgb(234, 235, 236);
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(212, 212, 212);
+                margin-top: 8px"/>
+        </div>
+    
+        <div style="margin-top: 15px">
+            <label for="input-phone" style="font-weight: bold; font-size: 20px;">Phone Number</label>
+            <input type="number" id="input-phone" style="width: 100%; 
+                background-color:rgb(234, 235, 236);
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(212, 212, 212);
+                margin-top: 8px"/>
+        </div>
+    
+        <div style="margin-top: 15px">
+            <label for="input-subject" style="font-weight: bold; font-size: 20px;">Subject</label>
+            <select id="input-subject" style="width: 100%; 
+                background-color:rgb(234, 235, 236);
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(212, 212, 212);
+                margin-top: 8px">
+                <option hidden></option>
+                <option>Let's Talk</option>
+                <option>Let's Collaboration</option>
+                <option>I am Hriring</option>
+            </select>
+        </div>
+    
+        <div style="margin-top: 15px">
+            <label for="input-message" style="font-weight: bold; font-size: 20px;">Your Message</label>
+            <textarea id="input-message" style="width: 100%; 
+                background-color:rgb(234, 235, 236);
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(212, 212, 212);
+                margin-top: 8px;
+                height: 85px;
+                resize:vertical"></textarea>
+        </div>
+    
+        <input type="checkbox" value="fa-brands fa-instagram">
+
+        <button onclick="submitData()" type="button" style="
+            background-color:orangered;
+            margin-top: 10px;
+            padding: 8px 30px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px">
+            Submit
+        </button>
+    </form>
+    
+
+</body>
+</html>

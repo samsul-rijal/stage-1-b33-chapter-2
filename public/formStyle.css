@@ -1,0 +1,102 @@
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    height: 7vh;
+}
+
+nav .nav-left{
+    /* background-color: aquamarine; */
+    flex: 50%;
+    padding-left: 100px;
+    display: flex;
+
+    align-items: center;
+}
+
+nav .nav-left li {
+    display: inline;
+}
+
+nav .nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+}
+
+.nav-right {
+    /* background-color: cadetblue; */
+    display: flex;
+    flex: 50%;
+    justify-content: flex-end; /* horizontal/ kiri-kanan */
+    align-items: center; /* vertical/ atas-bawah */
+    padding-right: 100px;
+}
+
+.nav-right a {
+    background-color: orangered;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container {
+    height: 93vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container section {
+    /* background-color: blueviolet; */
+    width: 85%;
+    display: flex;
+}
+
+.section-left {
+    /* background-color: rgb(218, 21, 236); */
+    flex: 30%;
+}
+
+.section-right {
+    /* background-color: coral; */
+    flex: 70%;
+    padding-left: 40px;
+}
+
+.section-right p {
+    color: grey;
+}
+
+.skill-container {
+    display: flex;
+}
+
+.skill-container div img {
+    width: 50px;
+}
+
+.skill-container div {
+    flex: 1;
+}
+
+.social-media i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: red;
+    }
+
+    .container section {
+        flex-direction: column;
+    }
+  }
